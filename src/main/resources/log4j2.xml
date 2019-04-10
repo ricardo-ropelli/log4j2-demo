@@ -9,7 +9,8 @@
         <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
             <JsonLayout eventEol="true" compact="true" complete="true">
                 <KeyValuePair key="additionalField1" value="constant value"/>
-                <KeyValuePair key="envVarSetOnAppConfiguration" value="$${env:bu}"/>
+                <KeyValuePair key="envVarSetOnAppConfiguration" value="${env:bu}"/>
+                <KeyValuePair key="headerThroughRequest" value="$${ctx:bu:-NONE}"/>
             </JsonLayout>
         </Console>
     </Appenders>
